@@ -24,18 +24,18 @@ INNER JOIN employee_salary AS sal # or INNER JOIN
 -- LEFT OUTER JOIN: Everything from left and common from right
 SELECT *
 FROM employee_demographics AS demo
-LEFT JOIN employee_salary AS sal # or INNER JOIN
+LEFT JOIN employee_salary AS sal
 	ON demo.employee_id = sal.employee_id
 ;
 
 -- RIGHT OUTER JOIN: Everything from right and common from left
 SELECT *
 FROM employee_demographics AS demo
-RIGHT JOIN employee_salary AS sal # or INNER JOIN
+RIGHT JOIN employee_salary AS sal
 	ON demo.employee_id = sal.employee_id
 ;
 
-# NOTE: In both cases it will populate the uncommon row with NULL for other table
+# NOTE: In all the cases it will populate the uncommon row with NULL for other table
 
 -- SELF JOIN
 
